@@ -130,761 +130,635 @@
   // Replace/add entries below in this shape:
   const variants = [
 {
-subject: "A note about your work",
-opener: `Hello,
+    subject: "A Private Curatorial Invitation",
+    opener: `Hello,`,
+    body: `My name is Daniel, and I work with Artist Discovery at The Hidden Gallery, a private collecting initiative being developed and directed by Stefan Simchowitz — collector, patron of contemporary art, and Curatorial Director.
 
-I hope you're doing well.`,
-body: `My name is Daniel. I'm currently assisting with some artist research for a private art project, and your work came across my desk recently.
-
-I spent some time looking through your practice and thought it would be worthwhile to introduce myself and tell you a little more about what we're developing.`,
-cta: `If you're open to it, I'd be happy to send you some further information.`,
-signOff: `Best regards,
-
+Your work came to our attention during our ongoing artist research, and I wanted to make a direct introduction.`,
+    cta: `We're currently considering artists for our inaugural curatorial cycle and would be glad to tell you more if you're open to it.`,
+    signOff: `Best regards,
 Daniel
-Artist Research
-Living Archive`,
-},
-
-{
-subject: "Regarding your practice",
-opener: `Hi,
-
-Hope you're having a good week.`,
-body: `I'm Daniel. I've been helping with research for a developing art project, and I came across your work while looking through a number of independent practices.
-
-There was something about the direction of your work that caught my attention, so I wanted to reach out personally rather than simply pass it along.`,
-cta: `If you'd be interested in hearing what the project is about, just let me know and I'll send over some details.`,
-signOff: `Best,
-
-Daniel`,
-},
-
-{
-subject: "Your work came across my research",
-opener: `Hello,
-
-I hope this finds you well.`,
-body: `I'm Daniel, and I'm currently involved in some artist research for a private collecting project.
-
-Your practice came to my attention recently. I found the direction of the work interesting enough that I thought it was worth making contact and seeing whether you'd be open to hearing about the project.`,
-cta: `If so, I'm happy to explain a little more.`,
-signOff: `Warm regards,
-
-Daniel`,
-},
-
-{
-subject: "A quick introduction",
-opener: `Hello,
-
-Hope you're having a good day.`,
-body: `My name is Daniel. I'm currently working on the artist-research side of a private art initiative and came across your work while researching artists outside the more conventional gallery circuit.
-
-I wanted to reach out directly and introduce myself before sending you anything further.`,
-cta: `Would you be open to hearing a little more about what we're putting together?`,
-signOff: `Best,
-
-Daniel`,
-},
-
-{
-subject: "Regarding your work",
-opener: `Hi,
-
-I hope you're doing well.`,
-body: `I'm Daniel. I've been researching artists for a private collecting project that's currently being developed, and your work recently came to my attention.
-
-I was particularly interested in the overall direction of your practice and thought there might be a reason to start a conversation.`,
-cta: `If you're curious, I'd be glad to tell you more about the project.`,
-signOff: `Best regards,
-
-Daniel`,
-},
-
-{
-subject: "An introduction",
-opener: `Hello,
-
-I hope your week is going well.`,
-body: `I'm reaching out because I came across your work while doing some research for an art project currently in development.
-
-Your practice stood out to me, and I wanted to ask whether you'd be open to hearing a little more about what we're working on.`,
-cta: `If you're interested, just reply when you have a moment and I'll send you the background.`,
-signOff: `Kind regards,
-
-Daniel`,
-},
-
-{
-subject: "A question regarding your practice",
-opener: `Hi,
-
-Hope all is well.`,
-body: `I'm Daniel. I'm currently assisting with artist research for a private collecting initiative, and your work came up during that process.
-
-I had a look through your practice and found the direction particularly interesting. Rather than sending a long introduction out of the blue, I thought I'd simply ask whether you'd be interested in hearing more.`,
-cta: `If so, I'm happy to share some context.`,
-signOff: `Best,
-
-Daniel`,
-},
-
-{
-subject: "I came across your work",
-opener: `Hello,
-
-I hope you're having a lovely week.`,
-body: `I'm Daniel, currently helping with research for a developing private art project.
-
-I came across your work recently and spent some time looking through the broader practice. There was enough there to make me want to reach out personally.`,
-cta: `Would you be open to me sending you a little more information about the project?`,
-signOff: `Warm regards,
-
-Daniel`,
-},
-
-{
-subject: "A quick note",
-opener: `Hello,
-
-Hope you're doing well.`,
-body: `I'm Daniel. I'm involved in the early artist-research stage of a private collecting project, and your work recently came across our research.
-
-I thought the practice was interesting and wanted to make a simple introduction before going into any detail about the project.`,
-cta: `If you'd like to hear more, just let me know and I'll be happy to explain.`,
-signOff: `Best regards,
-
-Daniel`,
-},
-
-{
-subject: "Reaching out regarding your work",
-opener: `Hi,
-
-I hope you're having a good week.`,
-body: `My name is Daniel. I'm currently assisting with research for a private art initiative and came across your practice recently.
-
-I was interested in the direction of your work and thought it might be worthwhile to make contact. At this point, I'm simply reaching out to see whether the project might be of interest to you.`,
-cta: `If you're open to hearing more, I'd be glad to send you the details.`,
-signOff: `Best,
-
-Daniel`,
-},
-{
-subject: "A note regarding your practice",
-opener: `Hello,
-
-I hope you're having a good week.`,
-body: `I'm Daniel, and I'm currently helping with artist research for a private art initiative that's in development.
-
-I came across your work recently and found the direction of your practice interesting. I wanted to reach out personally and see whether you'd be open to hearing a little more about what we're putting together.`,
-cta: `If you're interested, I'd be happy to send you some background.`,
-signOff: `Best regards,
-
-Daniel`,
-},
-
-{
-subject: "Regarding a private art project",
-opener: `Hi,
-
-Hope you're doing well.`,
-body: `My name is Daniel. I'm assisting with the early research stage of a private art project, and your work recently came to my attention.
-
-I spent some time looking through your practice and thought it would be worthwhile to introduce myself.`,
-cta: `If you'd like to hear more about the project, just let me know.`,
-signOff: `Best,
-
-Daniel`,
-},
-
-{
-subject: "Your work caught my attention",
-opener: `Hello,
-
-I hope all is well.`,
-body: `I'm Daniel. I've been researching independent artists for a private collecting project currently being developed.
-
-Your work came up during that research, and I found the character of the practice particularly interesting.`,
-cta: `Would you be open to hearing a little more about what we're developing?`,
-signOff: `Warm regards,
-
-Daniel`,
-},
-
-{
-subject: "An introduction regarding your work",
-opener: `Hi,
-
-I hope you're having a good week.`,
-body: `I'm currently assisting with artist research for a private initiative, and I came across your work recently.
-
-The direction of your practice stood out to me, so I wanted to make contact and see whether there might be some interest in learning more about the project.`,
-cta: `If you're curious, I'm happy to send over some information.`,
-signOff: `Best,
-
-Daniel`,
-},
-
-{
-subject: "A quick question",
-opener: `Hello,
-
-Hope you're doing well.`,
-body: `My name is Daniel. I'm involved in the research side of a developing art project and came across your practice while looking at independent artists.
-
-I thought the work was interesting enough to warrant a direct introduction.`,
-cta: `Would you be interested in hearing what we're currently putting together?`,
-signOff: `Kind regards,
-
-Daniel`,
-},
-
-{
-subject: "I came across your practice",
-opener: `Hello,
-
-I hope you're having a good day.`,
-body: `I'm Daniel, currently helping with research for a private collecting initiative.
-
-Your work came across my research recently, and I was interested in the direction of your practice.`,
-cta: `If you're open to it, I'd be glad to tell you a little more about the project.`,
-signOff: `Best regards,
-
-Daniel`,
-},
-
-{
-subject: "A brief introduction",
-opener: `Hi,
-
-Hope this finds you well.`,
-body: `I'm reaching out because I've been researching artists for a private project currently in development.
-
-Your practice came to my attention during that process, and I thought it would be worthwhile to introduce myself before sending over any detailed material.`,
-cta: `If you'd like to know more, just reply when you have a moment.`,
-signOff: `Best,
-
-Daniel`,
-},
-
-{
-subject: "Regarding an art initiative",
-opener: `Hello,
-
-I hope your week is going well.`,
-body: `I'm Daniel. I'm currently assisting with artist discovery for a private art initiative.
-
-I recently came across your work and was interested in the way your practice has developed.`,
-cta: `I'd be happy to explain the project if you're open to hearing more.`,
-signOff: `Warm regards,
-
-Daniel`,
-},
-
-{
-subject: "A note after seeing your work",
-opener: `Hi,
-
-I hope you're doing well.`,
-body: `I've been helping with research for a private collecting project and came across your work recently.
-
-The broader direction of your practice caught my attention, and I thought I'd reach out rather than simply leave it at the research stage.`,
-cta: `If you're interested, I can tell you a little more about what we're developing.`,
-signOff: `Best,
-
-Daniel`,
-},
-
-{
-subject: "Reaching out about your work",
-opener: `Hello,
-
-Hope you're having a good week.`,
-body: `My name is Daniel, and I'm currently involved in artist research for a developing private art initiative.
-
-Your practice recently came to my attention, and I found the work particularly interesting.`,
-cta: `Would you be open to receiving a little more information about the project?`,
-signOff: `Best regards,
-
-Daniel`,
-},
-
-{
-subject: "Your practice came up in our research",
-opener: `Hello,
-
-I hope you're doing well.`,
-body: `I'm Daniel. I'm assisting with research for a private collecting project and your practice recently came up during that process.
-
-I spent some time looking through the work and thought there was enough there to warrant getting in touch.`,
-cta: `If you're open to it, I'd be happy to explain what we're working on.`,
-signOff: `Kind regards,
-
-Daniel`,
-},
-
-{
-subject: "A quick note about your work",
-opener: `Hi,
-
-Hope you're having a good day.`,
-body: `I'm currently helping with artist research for a private art initiative that's taking shape.
-
-I came across your work recently and found the direction of the practice quite interesting.`,
-cta: `If you'd like, I can send you some background on the project.`,
-signOff: `Best,
-
-Daniel`,
-},
-
-{
-subject: "An inquiry regarding your practice",
-opener: `Hello,
-
-I hope you're having a good week.`,
-body: `My name is Daniel. I'm working on the artist-research side of a private collecting initiative and came across your practice recently.
-
-I wanted to make a direct introduction and see whether you'd be interested in hearing more.`,
-cta: `If so, just let me know and I'll send over the relevant information.`,
-signOff: `Warm regards,
-
-Daniel`,
-},
-
-{
-subject: "A note from Daniel",
-opener: `Hello,
-
-I hope all is well.`,
-body: `I'm currently assisting with research for a private art project, and your work caught my attention while I was looking through a number of independent practices.
-
-I thought I'd reach out personally rather than send an unsolicited amount of information.`,
-cta: `If you're curious about the project, I'd be happy to explain.`,
-signOff: `Best,
-
-Daniel`,
-},
-
-{
-subject: "Regarding your recent work",
-opener: `Hi,
-
-Hope you're doing well.`,
-body: `I'm Daniel, helping with artist research for a private collecting project.
-
-Your work came to my attention recently, and I was particularly interested in the direction of the practice.`,
-cta: `Would you be interested in hearing a little more about what we're developing?`,
-signOff: `Best regards,
-
-Daniel`,
-},
-
-{
-subject: "A question about your practice",
-opener: `Hello,
-
-I hope you're having a lovely week.`,
-body: `I'm involved in research for a private art initiative currently being developed, and I came across your work during that process.
-
-The practice stood out to me, so I thought it was worth reaching out directly.`,
-cta: `If you're open to a conversation, I'd be glad to tell you more.`,
-signOff: `Warm regards,
-
-Daniel`,
-},
-
-{
-subject: "An initial introduction",
-opener: `Hi,
-
-I hope you're having a good week.`,
-body: `My name is Daniel. I'm currently assisting with artist discovery for a private collecting project.
-
-I came across your practice recently and found its direction interesting enough that I wanted to introduce myself.`,
-cta: `If you'd like to hear more, I'm happy to provide some context.`,
-signOff: `Best,
-
-Daniel`,
-},
-
-{
-subject: "A note after coming across your work",
-opener: `Hello,
-
-Hope you're doing well.`,
-body: `I've been researching independent artistic practices for a private project, and your work recently came across my research.
-
-I thought the practice had a distinctive direction and wanted to reach out personally.`,
-cta: `Would you be open to hearing more about the initiative?`,
-signOff: `Best regards,
-
-Daniel`,
-},
-
-{
-subject: "Regarding an upcoming project",
-opener: `Hello,
-
-I hope you're having a good day.`,
-body: `I'm Daniel, and I'm assisting with research for a private art project that's currently being developed.
-
-Your work recently came to my attention, and I thought it might be relevant to what we're putting together.`,
-cta: `If you're interested, I'd be happy to share some more information.`,
-signOff: `Kind regards,
-
-Daniel`,
-},
-
-{
-subject: "A quick introduction regarding your work",
-opener: `Hi,
-
-Hope this finds you well.`,
-body: `I'm currently involved in artist research for a private collecting initiative.
-
-I came across your practice recently and was interested in the direction of the work, so I wanted to make contact.`,
-cta: `If you'd like to know more, just let me know and I'll be happy to explain.`,
-signOff: `Best,
-
-Daniel`,
-},
-
-{
-subject: "I wanted to introduce myself",
-opener: `Hello,
-
-I hope your week is going well.`,
-body: `My name is Daniel. I'm helping with the research and artist-discovery side of a private art project.
-
-Your practice recently came across my research, and I found the work interesting enough to reach out directly.`,
-cta: `If you're open to it, I'd be glad to tell you more about the project.`,
-signOff: `Warm regards,
-
-Daniel`,
-},
-
-{
-subject: "A note regarding your artistic practice",
-opener: `Hi,
-
-I hope you're doing well.`,
-body: `I'm currently researching artists for a private collecting initiative and came across your practice recently.
-
-I was particularly interested in the broader direction of the work rather than any single piece.`,
-cta: `If you'd like to hear what we're developing, I'd be happy to send some information.`,
-signOff: `Best regards,
-
-Daniel`,
-},
-
-{
-subject: "Regarding a private collecting initiative",
-opener: `Hello,
-
-Hope you're having a good week.`,
-body: `I'm Daniel. I'm assisting with the initial artist research for a private collecting initiative.
-
-Your work recently came to my attention, and I thought it would be worthwhile to introduce myself and see whether there might be some mutual interest.`,
-cta: `If you're curious, I'm happy to explain a little more about the initiative.`,
-signOff: `Best,
-
-Daniel`,
-},
-
-{
-subject: "A quick note from the research side",
-opener: `Hello,
-
-I hope you're doing well.`,
-body: `I'm currently helping with artist research for a developing private art project.
-
-Your practice came up during that process, and I spent some time looking through the work before deciding to reach out.`,
-cta: `If you're interested in hearing more, just reply and I'll send you some context.`,
-signOff: `Kind regards,
-
-Daniel`,
-},
-
-{
-subject: "Your work came to my attention",
-opener: `Hi,
-
-Hope you're having a good day.`,
-body: `I'm Daniel, and I'm involved in the early research stage of a private collecting project.
-
-I came across your work recently and found the direction of your practice particularly interesting.`,
-cta: `Would you be open to hearing a little more about what we're putting together?`,
-signOff: `Best,
-
-Daniel`,
-},
-
-{
-subject: "A simple introduction",
-opener: `Hello,
-
-I hope you're having a good week.`,
-body: `I'm reaching out because I've been helping research artists for a private art initiative currently in development.
-
-Your work stood out during that process, and I wanted to make a direct introduction.`,
-cta: `If you'd like to know more, I'm happy to provide some background.`,
-signOff: `Warm regards,
-
-Daniel`,
-},
-
-{
-subject: "Regarding an independent art project",
-opener: `Hi,
-
-I hope you're doing well.`,
-body: `My name is Daniel. I'm currently assisting with research for a private project focused on independent artistic practices.
-
-Your work recently came across my research, and I found the practice interesting enough to get in touch.`,
-cta: `If you're open to hearing more, just let me know.`,
-signOff: `Best regards,
-
-Daniel`,
-},
-
-{
-subject: "A note after researching your work",
-opener: `Hello,
-
-Hope you're having a good week.`,
-body: `I've been looking into a number of independent artistic practices for a private collecting project and came across your work.
-
-The direction of your practice caught my attention, so I wanted to reach out personally.`,
-cta: `If you'd like, I can explain what the project is about.`,
-signOff: `Best,
-
-Daniel`,
-},
-
-{
-subject: "An initial question",
-opener: `Hi,
-
-I hope you're having a good day.`,
-body: `I'm Daniel. I'm assisting with artist research for a private initiative currently being developed.
-
-Your practice recently came to my attention, and I thought it might be worth starting a conversation.`,
-cta: `Would you be interested in hearing more about the project?`,
-signOff: `Kind regards,
-
-Daniel`,
-},
-
-{
-subject: "Regarding your artistic work",
-opener: `Hello,
-
-I hope you're doing well.`,
-body: `I'm currently helping with research for a private collecting project, and your work came up during that process.
-
-I was interested in the character of the practice and wanted to reach out directly.`,
-cta: `If you're open to it, I'd be happy to send some further information.`,
-signOff: `Best regards,
-
-Daniel`,
-},
-
-{
-subject: "A brief note regarding your work",
-opener: `Hello,
-
-Hope you're having a good week.`,
-body: `My name is Daniel. I'm involved in the early artist-research stage of a private art initiative.
-
-I came across your practice recently and found its direction interesting.`,
-cta: `If you'd like to hear more about the project, just reply when convenient.`,
-signOff: `Best,
-
-Daniel`,
-},
-
-{
-subject: "A project I'd like to tell you about",
-opener: `Hi,
-
-I hope you're doing well.`,
-body: `I'm Daniel, currently helping with artist research for a private collecting initiative.
-
-Your work came across my research recently, and I thought the practice was worth introducing myself about.`,
-cta: `If you're interested, I can send you a little more information about what we're developing.`,
-signOff: `Warm regards,
-
-Daniel`,
-},
-
-{
-subject: "A note about your artistic practice",
-opener: `Hello,
-
-I hope you're having a good week.`,
-body: `I'm assisting with research for a private art project and came across your work recently.
-
-I found the overall direction of your practice interesting and thought it would be worthwhile to make contact.`,
-cta: `If you're open to hearing more, I'd be happy to explain the project.`,
-signOff: `Best regards,
-
-Daniel`,
-},
-
-{
-subject: "An introduction from the research team",
-opener: `Hi,
-
-Hope all is well.`,
-body: `My name is Daniel. I'm currently assisting with artist research for a private initiative.
-
-Your practice recently came to our attention, and I wanted to reach out personally before sharing any further information.`,
-cta: `If you'd be interested in learning more, just let me know.`,
-signOff: `Best,
-
-Daniel`,
-},
-
-{
-subject: "I wanted to ask about your practice",
-opener: `Hello,
-
-I hope you're doing well.`,
-body: `I've been researching artists for a private collecting project and came across your work recently.
-
-I was interested in the direction of your practice and thought I'd ask whether you'd be open to hearing more about the project.`,
-cta: `If so, I'm happy to provide some context.`,
-signOff: `Kind regards,
-
-Daniel`,
-},
-
-{
-subject: "Regarding a developing art project",
-opener: `Hello,
-
-Hope you're having a good week.`,
-body: `I'm Daniel, and I'm helping with artist research for a private project currently in development.
-
-Your work recently came to my attention, and I thought there might be a natural reason to introduce the project to you.`,
-cta: `If you're curious, I'd be glad to tell you more.`,
-signOff: `Best regards,
-
-Daniel`,
-},
-
-{
-subject: "A personal note regarding your work",
-opener: `Hi,
-
-I hope you're having a good day.`,
-body: `I'm currently assisting with research for a private collecting initiative and came across your practice recently.
-
-I spent some time looking through the work and wanted to reach out personally.`,
-cta: `Would you be open to receiving some information about what we're developing?`,
-signOff: `Warm regards,
-
-Daniel`,
-},
-
-{
-subject: "Regarding an artist research project",
-opener: `Hello,
-
-I hope you're doing well.`,
-body: `My name is Daniel. I'm involved in artist research for a private art initiative that's currently taking shape.
-
-Your practice recently came across my research, and I found the direction of the work particularly interesting.`,
-cta: `If you'd like to hear more, I'd be happy to explain the project.`,
-signOff: `Best,
-
-Daniel`,
-},
-
-{
-subject: "A quick introduction about a project",
-opener: `Hi,
-
-Hope you're having a great week.`,
-body: `I'm Daniel. I'm currently helping research artists for a private collecting project.
-
-Your work recently caught my attention, and I wanted to introduce myself and see whether you'd be open to hearing more.`,
-cta: `If so, just reply when convenient and I'll send over some background.`,
-signOff: `Best regards,
-
-Daniel`,
-},
-
-{
-subject: "Your practice and a private project",
-opener: `Hello,
-
-I hope you're having a good week.`,
-body: `I've been researching independent practices for a private art project and came across your work recently.
-
-The character of the practice interested me, so I thought it was worth making contact.`,
-cta: `If you're interested in learning more, I'm happy to provide some context.`,
-signOff: `Kind regards,
-
-Daniel`,
-},
-
-{
-subject: "A note from an artist researcher",
-opener: `Hello,
-
-Hope you're doing well.`,
-body: `I'm Daniel, currently assisting with artist research for a private collecting initiative.
-
-Your work recently came across my research, and I was interested in the direction of your practice.`,
-cta: `If you're open to hearing about the project, I'd be glad to tell you more.`,
-signOff: `Best,
-
-Daniel`,
-},
-
-{
-subject: "Regarding a potential introduction",
-opener: `Hi,
-
-I hope you're having a good day.`,
-body: `I'm currently helping with research for a private art initiative and came across your work while looking through independent practices.
-
-I thought your work was worth a closer look and wanted to see whether you'd be open to an introduction to the project.`,
-cta: `If you're interested, just let me know and I'll send over some details.`,
-signOff: `Warm regards,
-
-Daniel`,
-},
-
-{
-subject: "One question regarding your work",
-opener: `Hello,
-
-I hope you're doing well.`,
-body: `My name is Daniel. I'm assisting with the artist-research side of a private collecting project.
-
-Your practice recently came to my attention, and I found the direction of the work interesting.`,
-cta: `Would you be open to hearing a little more about what we're developing?`,
-signOff: `Best regards,
-
-Daniel`,
-},
-
-{
-subject: "A note after discovering your work",
-opener: `Hi,
-
-Hope you're having a good week.`,
-body: `I'm Daniel, and I've been helping research artists for a private art initiative.
-
-I came across your work recently and wanted to reach out because I thought the broader practice might be relevant to what we're developing.`,
-cta: `If you'd like to hear more, I'm happy to explain.`,
-signOff: `Best,
-
-Daniel`,
-},
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Artist Discovery — The Hidden Gallery",
+    opener: `Hello,`,
+    body: `I'm Daniel from The Hidden Gallery's Artist Discovery team. We're currently researching a group of artists for a private curatorial programme being developed under Stefan Simchowitz.
+
+Your practice was among those that caught our attention.`,
+    cta: `If you'd be interested in hearing what we're developing, simply reply and I'll send you a brief introduction.`,
+    signOff: `Kind regards,
+Daniel
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Regarding Your Work",
+    opener: `Hello,`,
+    body: `I'm reaching out from The Hidden Gallery, a private, research-led collecting initiative currently in development.
+
+We're looking beyond individual works and studying artists whose broader practices may have a place within the Gallery's inaugural curatorial cycle. Your work came up during that research.`,
+    cta: `Would you be open to a brief introduction to the project?`,
+    signOff: `Best,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Private Collection Inquiry",
+    opener: `Hello,`,
+    body: `My name is Daniel. I work in Artist Discovery for The Hidden Gallery, a private initiative being developed and directed by Stefan Simchowitz.
+
+We're currently exploring a small number of practices for potential acquisition and longer-term inclusion within a developing private collection.`,
+    cta: `If that sounds relevant to your practice, reply here and I'll explain the project.`,
+    signOff: `Warm regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "A Brief Introduction",
+    opener: `Hello,`,
+    body: `I wanted to introduce myself briefly. I'm Daniel, working with Artist Discovery at The Hidden Gallery.
+
+The Gallery is currently developing its first curatorial cycle, with a focus on artists whose practices warrant deeper consideration rather than simply individual works.`,
+    cta: `Your work came to our attention during this process. If you're curious, I'd be happy to tell you what we're doing.`,
+    signOff: `Best regards,
+Daniel
+The Hidden Gallery`
+  },
+
+  {
+    subject: "The Hidden Gallery",
+    opener: `Hello,`,
+    body: `I'm Daniel, part of Artist Discovery for The Hidden Gallery.
+
+We're currently conducting research for a private collecting project being developed by Stefan Simchowitz, with the intention of bringing a carefully considered group of artists into an inaugural curatorial cycle.`,
+    cta: `I thought your practice was worth approaching directly. Let me know if you'd like some background.`,
+    signOff: `Kind regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Artist Research",
+    opener: `Hello,`,
+    body: `Your work came across our Artist Discovery research at The Hidden Gallery.
+
+We're currently looking at practices across several areas of contemporary art as part of a private collecting and curatorial initiative directed by Stefan Simchowitz.`,
+    cta: `If you'd like to know why we reached out and what the initiative involves, I'd be happy to explain.`,
+    signOff: `Best,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Curatorial Research",
+    opener: `Hello,`,
+    body: `I'm Daniel from The Hidden Gallery. Our Artist Discovery team is currently researching artists for an invitation-based curatorial programme.
+
+The project is being developed by Stefan Simchowitz and is concerned with building a considered collection around artists and their practices over time.`,
+    cta: `Your work stood out during that research. If you're open to it, I'd like to introduce the project properly.`,
+    signOff: `Regards,
+Daniel
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Potential Collaboration",
+    opener: `Hello,`,
+    body: `My name is Daniel and I work with Artist Discovery at The Hidden Gallery.
+
+We're currently approaching a limited number of artists whose work may be relevant to an ongoing private collecting initiative. The project combines curatorial research, collection building and an archival component.`,
+    cta: `I'd be happy to explain the structure if you're interested in exploring a possible collaboration.`,
+    signOff: `Best regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Regarding a Private Art Initiative",
+    opener: `Hello,`,
+    body: `I'm reaching out on behalf of The Hidden Gallery, a private art initiative currently being developed and directed by Stefan Simchowitz.
+
+We're in the early stages of an inaugural curatorial cycle and are approaching artists selectively through our research rather than through public submissions.`,
+    cta: `Your practice came to our attention. If you'd like to hear more, just reply to this email.`,
+    signOff: `Kind regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "A Question About Your Practice",
+    opener: `Hello,`,
+    body: `I'm Daniel with The Hidden Gallery's Artist Discovery team.
+
+We're currently researching artists for a private collection being developed around contemporary practices with a strong sense of direction and development. Your work came up during that process.`,
+    cta: `Would you be interested in hearing what we're building?`,
+    signOff: `Best,
+Daniel
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Private Artist Research",
+    opener: `Hello,`,
+    body: `The Hidden Gallery is currently conducting a private round of artist research as part of its inaugural curatorial cycle.
+
+I'm Daniel, and my role is to make the initial connection with artists whose work has caught our attention.`,
+    cta: `I'd like to tell you a little more about the project and why your practice came onto our radar, if you're open to that.`,
+    signOff: `Warm regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Invitation to Hear More",
+    opener: `Hello,`,
+    body: `I'm Daniel, working in Artist Discovery for The Hidden Gallery.
+
+We're currently inviting a small number of artists into conversations around a private collecting initiative being developed under Stefan Simchowitz. The initiative is still in its inaugural phase, so we're approaching artists individually.`,
+    cta: `Your work was selected for that initial research. If you'd like to hear more, reply here and I'll send the relevant information.`,
+    signOff: `Best regards,
+Daniel
+The Hidden Gallery`
+  },
+
+  {
+    subject: "The Hidden Gallery — Artist Discovery",
+    opener: `Hello,`,
+    body: `I work with Artist Discovery at The Hidden Gallery, where we're currently researching practices for a private curatorial and collecting programme.
+
+The project is intentionally small at this stage and is being developed around a selected group of artists rather than an open application process.`,
+    cta: `Your work came to our attention during the research. If you're receptive, I'd be glad to continue the conversation.`,
+    signOff: `Regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Private Curatorial Programme",
+    opener: `Hello,`,
+    body: `My name is Daniel, and I'm part of the Artist Discovery team at The Hidden Gallery.
+
+We're currently developing an invitation-only curatorial programme that looks at artists not simply for isolated works, but for the direction and substance of their wider practice.`,
+    cta: `We came across your work during that research and would like to explore whether a conversation makes sense.`,
+    signOff: `Best,
+Daniel
+The Hidden Gallery`
+  },
+
+  {
+    subject: "A Direct Introduction",
+    opener: `Hello,`,
+    body: `I'll keep this brief. I'm Daniel from Artist Discovery at The Hidden Gallery.
+
+We're currently building the first cycle of a private collecting initiative directed by Stefan Simchowitz, and your work has entered our research.`,
+    cta: `If you're open to it, I'll send you a little more about the project and what we're currently looking for.`,
+    signOff: `Best regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Contemporary Art Research",
+    opener: `Hello,`,
+    body: `I'm Daniel with The Hidden Gallery.
+
+Our team is currently conducting research across contemporary artistic practices for a private collecting project. We're particularly interested in understanding the artists behind the work, their development, and the bodies of work that may have longer-term relevance to the collection.`,
+    cta: `Your practice came up in that process. Let me know if you'd be interested in hearing more.`,
+    signOff: `Kind regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Potential Acquisition",
+    opener: `Hello,`,
+    body: `My name is Daniel and I work in Artist Discovery for The Hidden Gallery.
+
+We're currently researching artists for potential acquisition as part of our inaugural private collection. At this stage, we're simply making introductions before any formal curatorial discussion takes place.`,
+    cta: `Your work caught our attention, and I'd be glad to explain the initiative if you're interested.`,
+    signOff: `Best,
+Daniel
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Private Collection — Artist Discovery",
+    opener: `Hello,`,
+    body: `I'm reaching out from The Hidden Gallery's Artist Discovery team.
+
+The Gallery is currently developing a private collection under the direction of Stefan Simchowitz, with the inaugural cycle focused on a relatively small group of artists identified through independent research.`,
+    cta: `Your practice is one we'd like to explore further. If you're open to a conversation, simply reply here.`,
+    signOff: `Warm regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "A Note from Artist Discovery",
+    opener: `Hello,`,
+    body: `I'm Daniel. I work with Artist Discovery at The Hidden Gallery, which is currently developing a private curatorial and collecting programme.
+
+Rather than accepting submissions, we're identifying artists through ongoing research and approaching them individually.`,
+    cta: `Your work came to our attention during that process. If you'd like to know more, I'll be happy to explain.`,
+    signOff: `Best regards,
+Daniel
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Curatorial Cycle I",
+    opener: `Hello,`,
+    body: `The Hidden Gallery is currently developing its inaugural Curatorial Cycle, and I'm part of the team researching artists who may be appropriate for it.
+
+The initiative is private and research-led, with the eventual aim of building a considered collection around a selected group of practices.`,
+    cta: `Your work has been included in our research. If you'd like an introduction to the project, just let me know.`,
+    signOff: `Regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Your Practice Came to Our Attention",
+    opener: `Hello,`,
+    body: `I'm Daniel from The Hidden Gallery.
+
+While researching contemporary artists for our current curatorial cycle, your practice came to our attention. The Gallery is being developed as a private collecting initiative under Stefan Simchowitz, with a focus on artists whose work merits sustained curatorial consideration.`,
+    cta: `If you're curious about what that means in practice, I'd be happy to give you the short version.`,
+    signOff: `Best,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "An Invitation to Continue",
+    opener: `Hello,`,
+    body: `My role with The Hidden Gallery is to identify artists whose practices may warrant further curatorial conversation.
+
+We're currently working through the research phase of our inaugural private collecting cycle, and your work has reached that stage of consideration.`,
+    cta: `I'd like to introduce the project and see whether it might be relevant to you. If so, reply here and we'll continue from there.`,
+    signOff: `Kind regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Regarding a Possible Acquisition",
+    opener: `Hello,`,
+    body: `I'm Daniel, working with Artist Discovery at The Hidden Gallery.
+
+We're currently exploring a small number of artists for possible acquisition and inclusion within a private collection being developed by Stefan Simchowitz.`,
+    cta: `I don't want to overload you with information in a first email, but if you're open to hearing more, I'll send the short overview.`,
+    signOff: `Best regards,
+Daniel
+The Hidden Gallery`
+  },
+
+  {
+    subject: "A Private Art Project",
+    opener: `Hello,`,
+    body: `I'm Daniel from The Hidden Gallery.
+
+We're developing a private art project that sits between artist discovery, curatorial research and long-term collecting. The current cycle is deliberately limited and invitation-based.`,
+    cta: `Your work came up during our research, and I'd like to tell you a little more if you're receptive.`,
+    signOff: `Warm regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Artist Discovery Inquiry",
+    opener: `Hello,`,
+    body: `I work in Artist Discovery for The Hidden Gallery, currently being developed and directed by Stefan Simchowitz.
+
+We're looking at a number of contemporary practices for our first curatorial cycle, with the intention of developing relationships with artists before discussing any specific works.`,
+    cta: `Your practice caught our attention. If you're interested, reply and I'll explain what we're working on.`,
+    signOff: `Best,
+Daniel
+The Hidden Gallery`
+  },
+
+  {
+    subject: "A Note Regarding Your Work",
+    opener: `Hello,`,
+    body: `Your work recently came across our research at The Hidden Gallery.
+
+I'm Daniel, part of the Artist Discovery team. We're currently developing a private collection and curatorial programme under Stefan Simchowitz, and we're approaching artists individually rather than issuing a public call.`,
+    cta: `I'd be happy to give you the context behind the outreach if you'd like to hear it.`,
+    signOff: `Kind regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Private Curatorial Invitation",
+    opener: `Hello,`,
+    body: `I'm Daniel from The Hidden Gallery. We're currently in the research stage of our inaugural curatorial cycle.
+
+The Gallery is intended as a private, invitation-based collecting initiative, with selected artists moving from initial discovery into deeper curatorial conversation and, where appropriate, collection consideration.`,
+    cta: `Your work has brought us to this initial point of contact. If you'd like to explore it further, reply here.`,
+    signOff: `Best regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Contemporary Practice — Private Research",
+    opener: `Hello,`,
+    body: `I'm reaching out as part of The Hidden Gallery's current artist research.
+
+The project is being developed by Stefan Simchowitz as a private collecting initiative, and we're currently examining practices across different areas of contemporary art for possible inclusion in the inaugural cycle.`,
+    cta: `Your work stood out sufficiently for us to make contact. If you're interested, I'll send over the relevant background.`,
+    signOff: `Regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Would You Be Open to Hearing More?",
+    opener: `Hello,`,
+    body: `I'm Daniel and I work with Artist Discovery at The Hidden Gallery.
+
+We're currently approaching artists as part of a private research and collecting cycle being developed under Stefan Simchowitz. There is no public submission process; we're contacting artists individually as their work enters our research.`,
+    cta: `Your practice is one we'd like to learn more about. Would you be open to hearing what we're developing?`,
+    signOff: `Best,
+Daniel
+The Hidden Gallery`
+  },
+    
+  {
+    subject: "An Introduction from The Hidden Gallery",
+    opener: `Hello,`,
+    body: `My name is Daniel. I work with the Artist Discovery side of The Hidden Gallery, a private collecting initiative currently being developed under Stefan Simchowitz.
+
+We're in the process of identifying artists for our inaugural cycle, and your practice came to our attention through that research.`,
+    cta: `If you'd like to understand what we're putting together, I'm happy to send a short overview.`,
+    signOff: `Best regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Regarding Your Artistic Practice",
+    opener: `Hello,`,
+    body: `I'm getting in touch because your practice has entered our current research at The Hidden Gallery.
+
+We're developing a private curatorial programme around a selected group of contemporary artists, with potential acquisition forming part of the broader process.`,
+    cta: `If that is something you'd be open to discussing, I'd be glad to continue the conversation.`,
+    signOff: `Kind regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Artist Discovery — Private Initiative",
+    opener: `Hello,`,
+    body: `I'm Daniel, working with Artist Discovery for The Hidden Gallery.
+
+At present we're researching artists for a private initiative directed by Stefan Simchowitz. The project is still in its inaugural phase, so our first contact with artists is intentionally straightforward.`,
+    cta: `Your work was among the practices we wanted to approach. Let me know if you'd like the brief background.`,
+    signOff: `Best,
+Daniel
+The Hidden Gallery`
+  },
+
+  {
+    subject: "A Possible Curatorial Conversation",
+    opener: `Hello,`,
+    body: `I work with The Hidden Gallery's Artist Discovery team. We're currently moving through the research stage of our first curatorial cycle.
+
+The intention is to identify artists whose practices could warrant a deeper conversation around collecting, curatorial context and longer-term development.`,
+    cta: `Your work has prompted us to reach out. If you're receptive, I'd like to introduce the project properly.`,
+    signOff: `Warm regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Private Art Collection — Initial Contact",
+    opener: `Hello,`,
+    body: `I'm Daniel from The Hidden Gallery.
+
+We're currently building the foundations of a private contemporary art collection under Stefan Simchowitz, and we're speaking with artists whose work has emerged through our research rather than through formal submissions.`,
+    cta: `I'd be interested in hearing whether you'd be open to learning more about the initiative.`,
+    signOff: `Regards,
+Daniel
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Researching Artists for a New Cycle",
+    opener: `Hello,`,
+    body: `The Hidden Gallery is currently researching artists for its first curatorial cycle.
+
+I'm part of the Artist Discovery team, and our role at this stage is simply to identify practices that may warrant further attention before anything more formal takes place.`,
+    cta: `Your work has reached that point in our research. If you'd like, I can explain what happens from here.`,
+    signOff: `Best regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "A Private Collecting Project",
+    opener: `Hello,`,
+    body: `I'm Daniel, working with The Hidden Gallery.
+
+We're currently developing a private collecting project that brings together artist discovery, curatorial review and eventual collection development. We're keeping the initial group deliberately selective while the first cycle takes shape.`,
+    cta: `Your practice is one we'd like to explore further. Reply if you'd like an introduction to the project.`,
+    signOff: `Kind regards,
+Daniel
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Your Work in Our Research",
+    opener: `Hello,`,
+    body: `I wanted to reach out directly rather than send a long institutional introduction.
+
+I'm Daniel with The Hidden Gallery's Artist Discovery team. Your work has appeared in our current research for the Gallery's inaugural private curatorial cycle.`,
+    cta: `If you're curious about why we're reaching out and what we're developing, I'm happy to explain.`,
+    signOff: `Best,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "The Hidden Gallery — Initial Inquiry",
+    opener: `Hello,`,
+    body: `I'm contacting you from The Hidden Gallery, currently being developed and directed by Stefan Simchowitz.
+
+We're looking at a range of contemporary practices for a private programme that may ultimately involve acquisition, collection development and an ongoing curatorial relationship.`,
+    cta: `Your work came up during this process. If you'd be interested in hearing more, just reply here.`,
+    signOff: `Best regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Private Artist Outreach",
+    opener: `Hello,`,
+    body: `My name is Daniel and I work with The Hidden Gallery's Artist Discovery team.
+
+We're currently making a small number of direct introductions to artists whose work has surfaced through our research. The Gallery is being developed as a private, invitation-led collecting project.`,
+    cta: `I thought it would be worthwhile to introduce the initiative and see whether it resonates with you.`,
+    signOff: `Warm regards,
+Daniel
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Curatorial Research — The Hidden Gallery",
+    opener: `Hello,`,
+    body: `Our team is currently conducting artist research for The Hidden Gallery's inaugural curatorial cycle.
+
+I'm Daniel, and I handle the initial Artist Discovery stage. We're interested in practices with enough depth and continuity to merit consideration beyond a single transaction.`,
+    cta: `Your work came up during that research. If you'd like to know more about the project, I'll be glad to continue.`,
+    signOff: `Kind regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Potential Inclusion in a Private Programme",
+    opener: `Hello,`,
+    body: `I'm Daniel from The Hidden Gallery.
+
+We're currently considering artists for a private curatorial programme being developed by Stefan Simchowitz. The first cycle is focused on discovering practices that may have a meaningful place within a developing collection.`,
+    cta: `Your work has prompted us to make contact. Let me know if you're interested in discussing it further.`,
+    signOff: `Best,
+Daniel
+The Hidden Gallery`
+  },
+
+  {
+    subject: "A Short Note from Artist Discovery",
+    opener: `Hello,`,
+    body: `I'll keep this short.
+
+I'm Daniel, working with Artist Discovery at The Hidden Gallery. We're currently researching artists for our inaugural private collecting cycle, and your work came up during our review.`,
+    cta: `If you're open to it, I'll send you the short version of what we're building.`,
+    signOff: `Best regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Contemporary Artists — Private Research",
+    opener: `Hello,`,
+    body: `I'm reaching out as part of The Hidden Gallery's current research into contemporary artists.
+
+The Gallery is being developed as a private collecting and curatorial initiative under Stefan Simchowitz. At this stage, we're interested in understanding practices before discussing individual works or formal terms.`,
+    cta: `Your practice caught our attention. If you'd like to continue, I'm happy to provide some context.`,
+    signOff: `Regards,
+Daniel
+The Hidden Gallery`
+  },
+
+  {
+    subject: "A Possible Acquisition Discussion",
+    opener: `Hello,`,
+    body: `I'm Daniel with The Hidden Gallery's Artist Discovery team.
+
+We're currently researching artists whose work may be appropriate for potential acquisition within our inaugural private collection. The acquisition side comes later in the process; for now we're simply making initial connections.`,
+    cta: `Your work has entered our consideration, and I'd be glad to explain the wider project if you're interested.`,
+    signOff: `Kind regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Private Curatorial Research",
+    opener: `Hello,`,
+    body: `The Hidden Gallery is currently in the early development of its first curatorial cycle.
+
+I'm Daniel, working on Artist Discovery. We're approaching artists individually because the project is being built through research and conversation rather than an open call.`,
+    cta: `Your practice came up during that process. If you're willing, I'd like to tell you a little more about what we're doing.`,
+    signOff: `Best regards,
+Daniel
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Regarding a New Collecting Initiative",
+    opener: `Hello,`,
+    body: `I'm Daniel from The Hidden Gallery.
+
+We're currently developing a private contemporary art initiative with Stefan Simchowitz, bringing together artist discovery, curatorial assessment and collection development within a single inaugural cycle.`,
+    cta: `We're interested in learning whether your practice might be relevant to that process. If you're open to it, let's continue the conversation.`,
+    signOff: `Warm regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Your Practice — The Hidden Gallery",
+    opener: `Hello,`,
+    body: `I came across your work while working through Artist Discovery research for The Hidden Gallery.
+
+We're currently looking at artists for an invitation-based private programme. The emphasis is on the wider practice and its development, with individual works considered further along in the process.`,
+    cta: `I'd be happy to explain the initiative and what prompted the outreach if you'd like to hear more.`,
+    signOff: `Best,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  },
+
+  {
+    subject: "An Invitation to Learn More",
+    opener: `Hello,`,
+    body: `My name is Daniel, and I work with Artist Discovery at The Hidden Gallery.
+
+The Gallery is currently developing its inaugural private collection under Stefan Simchowitz. We're approaching a limited number of artists whose work has emerged through our research, with the intention of opening conversations before making any formal decisions.`,
+    cta: `Your practice is one we'd like to know more about. If you're interested, I'll send you the relevant background.`,
+    signOff: `Kind regards,
+Daniel
+The Hidden Gallery`
+  },
+
+  {
+    subject: "Artist Research — Initial Contact",
+    opener: `Hello,`,
+    body: `I'm Daniel, part of The Hidden Gallery's Artist Discovery team.
+
+We're currently researching contemporary practices for a private curatorial cycle. The project is intended to develop gradually, beginning with artist discovery and conversation before moving toward collection consideration.`,
+    cta: `Your work came to our attention during this stage. If you'd be interested in exploring it, simply reply here.`,
+    signOff: `Best regards,
+Daniel
+Artist Discovery
+The Hidden Gallery`
+  }
     // Add more variants here in the same shape — subject, opener, body,
     // cta, signOff. Paste your new set and I'll drop them in.
   ];
